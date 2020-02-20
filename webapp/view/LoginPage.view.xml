@@ -2,7 +2,7 @@
 	<Shell id="shell">
 		<App id="app">
 			<pages>
-				<Page id="page" title="Nish was here  " >
+				<Page id="page" title="Nish was here   " >
 					<content></content>
 				</Page>
 			</pages>
