@@ -1,10 +1,28 @@
-<mvc:View controllerName="gdsd.NPOSolution.controller.LoginPage" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="gdsd.NPOSolution.controller.LoginPage" displayBlock="true">
 	<Shell id="shell">
 		<App id="app">
 			<pages>
-				<Page id="page" title="Nish was here   " >
-					<content></content>
-				</Page>
+				<Page id="page" title="NPO Solution - Login">
+								<content>
+			    <HBox width="100%" id="hbox0" alignContent="Center" alignItems="Center" justifyContent="Center">
+					        <items>
+					            <Image src="pictures/social.jpg" width="100%" height="140px" id="image0" backgroundPosition="center"/>
+					        </items>
+					    </HBox>
+			    <HBox width="100%" id="hbox1" height="5%">
+			        <items>
+			            <core:InvisibleText text="InvisibleText" id="text176"/>
+			        </items>
+			    </HBox>
+			    <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="grid2">
+			        <sap.ui.layout:content>
+			            <ObjectListItem title="Submit Claim" icon="sap-icon://suitcase" id="item17"/>
+			            <ObjectListItem title="Apply for Funding" icon="sap-icon://capital-projects" id="item18"/>
+			            <ObjectListItem title="Funding Application Status" icon="sap-icon://process" id="item16"/>
+			            <ObjectListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" title="FAQ" icon="sap-icon://question-mark" id="item18_copy2"/></sap.ui.layout:content>
+			    </sap.ui.layout:Grid>
+			</content>
+					</Page>
 			</pages>
 		</App>
 	</Shell>
