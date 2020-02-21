@@ -1,4 +1,4 @@
-<mvc:View  xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="gdsd.NPOSolution.controller.LoginPage" displayBlock="true">
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="gdsd.NPOSolution.controller.LoginPage" displayBlock="true">
 	<Shell id="shell">
 		<App id="app">
 			<pages>
@@ -14,13 +14,34 @@
 			            <core:InvisibleText text="InvisibleText" id="text176"/>
 			        </items>
 			    </HBox>
-			    <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="grid2">
-			        <sap.ui.layout:content>
-			            <ObjectListItem title="Submit Claim" icon="sap-icon://suitcase" id="item17"/>
-			            <ObjectListItem title="Apply for Funding" icon="sap-icon://capital-projects" id="item18"/>
-			            <ObjectListItem title="Funding Application Status" icon="sap-icon://process" id="item16"/>
-			            <ObjectListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" title="FAQ" icon="sap-icon://question-mark" id="item18_copy2"/></sap.ui.layout:content>
-			    </sap.ui.layout:Grid>
+			    <sap.ui.layout.form:Form editable="true" xmlns:sap.ui.layout.form="sap.ui.layout.form" id="form0">
+			        <sap.ui.layout.form:formContainers>
+			            <sap.ui.layout.form:FormContainer id="container0">
+			                <sap.ui.layout.form:formElements>
+			                    <sap.ui.layout.form:FormElement label="Username" id="element0">
+			                        <sap.ui.layout.form:fields>
+			                            <Input width="100%" id="input1"/>
+			                        </sap.ui.layout.form:fields>
+			                    </sap.ui.layout.form:FormElement>
+			                    <sap.ui.layout.form:FormElement xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" label="Password" id="element0_copy">
+			                        <sap.ui.layout.form:fields>
+			                            <Input width="100%" id="input1_copy"/>
+			                            </sap.ui.layout.form:fields>
+			                        
+			                    </sap.ui.layout.form:FormElement>
+			                    <sap.ui.layout.form:FormElement xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" id="element0_copy4">
+			                        <sap.ui.layout.form:fields>
+			                            <Button xmlns="sap.m" text="Login" id="button1" type="Accept"/>
+			                            <Button xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" text="Forgot Password" id="button1_copy" type="Reject"/>
+			                            </sap.ui.layout.form:fields>
+			                        
+			                    </sap.ui.layout.form:FormElement>
+			                </sap.ui.layout.form:formElements>
+			            </sap.ui.layout.form:FormContainer>
+			        </sap.ui.layout.form:formContainers>
+			        <sap.ui.layout.form:layout>
+			            <sap.ui.layout.form:ResponsiveGridLayout id="layout0"/>
+			        </sap.ui.layout.form:layout></sap.ui.layout.form:Form>
 			</content>
 					</Page>
 			</pages>
