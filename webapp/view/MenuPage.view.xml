@@ -1,7 +1,6 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="gdsd.NPOSolution.controller.MenuPage"
 	xmlns:html="http://www.w3.org/1999/xhtml">
-	<App>
-		<pages>
+	
 			<Page id="MenuPage" title="{i18n>appTitleMenu}">
 						<content>
 			    <HBox width="100%" id="hbox0" alignContent="Center" alignItems="Center" justifyContent="Center">
@@ -23,6 +22,5 @@
 			    </sap.ui.layout:Grid>
 			</content>
 			</Page>
-		</pages>
-	</App>
+	
 </mvc:View>
