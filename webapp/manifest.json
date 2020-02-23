@@ -33,10 +33,10 @@
 	"sap.ui5": {
 		"flexEnabled": false,
 		"rootView": {
-			"viewName": "gdsd.NPOSolution.view.LoginPage",
+			"viewName": "gdsd.NPOSolution.view.App",
 			"type": "XML",
 			"async": true,
-			"id": "LoginPage"
+			"id": "App"
 		},
 		"dependencies": {
 			"minUI5Version": "1.65.6",
@@ -70,39 +70,35 @@
 				"async": true,
 				"viewPath": "gdsd.NPOSolution.view",
 				"controlAggregation": "pages",
-				"controlId": "",
+				"controlId": "app",
 				"clearControlAggregation": false,
 				"bypassed": {
 					"target": []
 				}
 			},
 			"routes": [{
-				"name": "LoginPage",
-				"pattern": "",
-				"titleTarget": "",
-				"greedy": false,
-				"target": ["LoginPage"]
-			}, {
 				"name": "MenuPage",
 				"pattern": "MenuPage",
-				"titleTarget": "",
-				"greedy": false,
 				"target": ["MenuPage"]
+			}, {
+				"name": "LoginPage",
+				"pattern": "",
+				"view": "LoginPage",
+				"target": ["LoginPage"]
 			}],
 			"targets": {
 				"MenuPage": {
 					"viewType": "XML",
-					"transition": "slide",
-					"clearControlAggregation": false,
 					"viewName": "MenuPage",
-					"viewId": "MenuPage"
+					"view": "MenuPage",
+					"viewId": "menupage",
+					"clearControlAggregation": true
 				},
 				"LoginPage": {
 					"viewType": "XML",
-					"transition": "slide",
-					"clearControlAggregation": true,
 					"viewName": "LoginPage",
-					"viewId": "LoginPage"
+					"viewId": "loginpage",
+					"clearControlAggregation": true
 				}
 			}
 		}

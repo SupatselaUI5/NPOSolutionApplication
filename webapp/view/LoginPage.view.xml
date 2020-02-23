@@ -1,6 +1,7 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="gdsd.NPOSolution.controller.LoginPage" displayBlock="true">
 
-				<Page id="LoginPage" title="{i18n>appTitle}">
+
+				<Page id="loginpage" title="{i18n>appTitle}">
 								<content>
 			    <HBox width="100%" id="hbox0" alignContent="Center" alignItems="Center" justifyContent="Center">
 					        <items>
@@ -42,5 +43,4 @@
 			        </sap.ui.layout.form:layout></sap.ui.layout.form:Form>
 			</content>
 					</Page>
-	
-</mvc:View>
+			</mvc:View>
