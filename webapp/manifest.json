@@ -14,7 +14,6 @@
 			"version": "1.40.12"
 		}
 	},
-
 	"sap.ui": {
 		"technology": "UI5",
 		"icons": {
@@ -31,7 +30,6 @@
 			"phone": true
 		}
 	},
-
 	"sap.ui5": {
 		"flexEnabled": false,
 		"rootView": {
@@ -72,21 +70,39 @@
 				"async": true,
 				"viewPath": "gdsd.NPOSolution.view",
 				"controlAggregation": "pages",
-				"controlId": "app",
-				"clearControlAggregation": false
+				"controlId": "",
+				"clearControlAggregation": false,
+				"bypassed": {
+					"target": []
+				}
 			},
 			"routes": [{
-				"name": "RouteLoginPage",
-				"pattern": "RouteLoginPage",
-				"target": ["TargetLoginPage"]
+				"name": "LoginPage",
+				"pattern": "",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["LoginPage"]
+			}, {
+				"name": "MenuPage",
+				"pattern": "MenuPage",
+				"titleTarget": "",
+				"greedy": false,
+				"target": ["MenuPage"]
 			}],
 			"targets": {
-				"TargetLoginPage": {
+				"MenuPage": {
 					"viewType": "XML",
 					"transition": "slide",
 					"clearControlAggregation": false,
-					"viewId": "LoginPage",
-					"viewName": "LoginPage"
+					"viewName": "MenuPage",
+					"viewId": "MenuPage"
+				},
+				"LoginPage": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": true,
+					"viewName": "LoginPage",
+					"viewId": "LoginPage"
 				}
 			}
 		}

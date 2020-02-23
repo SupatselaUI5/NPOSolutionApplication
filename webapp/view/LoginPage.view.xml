@@ -1,8 +1,8 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="gdsd.NPOSolution.controller.LoginPage" displayBlock="true">
 	<Shell id="shell">
-		<App id="app">
+		<App xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
 			<pages>
-				<Page id="page" title="{i18n>appTitle}">
+				<Page id="LoginPage" title="{i18n>appTitle}">
 								<content>
 			    <HBox width="100%" id="hbox0" alignContent="Center" alignItems="Center" justifyContent="Center">
 					        <items>
@@ -14,7 +14,7 @@
 			            <core:InvisibleText text="InvisibleText" id="text176"/>
 			        </items>
 			    </HBox>
-			    <sap.ui.layout.form:Form editable="true" xmlns:sap.ui.layout.form="sap.ui.layout.form" id="form0">
+			    <sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="form0">
 			        <sap.ui.layout.form:formContainers>
 			            <sap.ui.layout.form:FormContainer id="container0">
 			                <sap.ui.layout.form:formElements>
@@ -31,7 +31,7 @@
 			                    </sap.ui.layout.form:FormElement>
 			                    <sap.ui.layout.form:FormElement xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" id="element0_copy4">
 			                        <sap.ui.layout.form:fields>
-			                            <Button xmlns="sap.m" text="Login" id="button1" type="Accept"/>
+			                            <Button xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Login" id="button1" type="Accept" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'MenuPage'\}\}\}"/>
 			                            <Button xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns="sap.m" text="Forgot Password" id="button1_copy" type="Reject"/>
 			                            </sap.ui.layout.form:fields>
 			                        
