@@ -1,0 +1,57 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="gdsd.NPOSolution.controller.MainPage"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Shell id="shell">
+		<App id="app">
+			<pages><Page id="page" title="{i18n>title}" backgroundDesign="Solid">
+					<content>
+					    <HBox width="100%" id="hbox0" alignContent="Center" alignItems="Center" justifyContent="Center">
+					        <items>
+					            <Image src="pictures/social.jpg" width="300px" height="140px" id="image0" backgroundPosition="center"/>
+					        </items>
+					    </HBox>
+					    <sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="form0">
+					        <sap.ui.layout.form:formContainers>
+					            <sap.ui.layout.form:FormContainer title="Identification" id="container0">
+					            	
+		
+					            	
+					                <sap.ui.layout.form:formElements>
+					                    <sap.ui.layout.form:FormElement label="ID Type" id="element0">
+					                        <sap.ui.layout.form:fields>
+					                            <Input width="100%" id="input0" showValueHelp="true"/>
+					                        </sap.ui.layout.form:fields>
+					                    </sap.ui.layout.form:FormElement>
+					                    <sap.ui.layout.form:FormElement xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" label="ID Number" id="element0_copy3">
+					                        <sap.ui.layout.form:fields>
+					                            <Input width="100%" id="input0_copy3"/>
+					                            
+					                        </sap.ui.layout.form:fields>
+					                        
+					                    </sap.ui.layout.form:FormElement>
+					                    <sap.ui.layout.form:FormElement xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout.form="sap.ui.layout.form" label="Program Type" id="element0_copy5">
+					                        <sap.ui.layout.form:fields>
+					                            <Input width="100%" id="input0_copy5" showValueHelp="true"/>
+					                            
+					                        </sap.ui.layout.form:fields>
+					                        
+					                    </sap.ui.layout.form:FormElement>
+					                </sap.ui.layout.form:formElements>
+					            </sap.ui.layout.form:FormContainer>
+					        </sap.ui.layout.form:formContainers>
+					        <sap.ui.layout.form:layout>
+					            <sap.ui.layout.form:ResponsiveGridLayout id="layout0"/>
+					        </sap.ui.layout.form:layout></sap.ui.layout.form:Form>
+					</content>
+				<footer>
+				    <Toolbar class="sapContrast sapContrastPlus" width="100%" id="toolbar2">
+				        <content>
+				            <ToolbarSpacer id="spacer1"/>
+				            <Button xmlns="sap.m" text="Next" id="button3" type="Accept" press="onNextMainPage"/>
+				        </content>
+				    </Toolbar>
+				</footer>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

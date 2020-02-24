@@ -108,6 +108,10 @@
 					"viewName": "LoginPage",
 					"viewId": "loginpage",
 					"clearControlAggregation": true
+				},
+				"MainPage": {
+					"viewType": "XML",
+					"viewName": "MainPage"
 				}
 			}
 		}
