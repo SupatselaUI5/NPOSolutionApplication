@@ -59,9 +59,11 @@
 			}
 		},
 		"resources": {
-			"css": [{
-				"uri": "css/style.css"
-			}]
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
 		},
 		"routing": {
 			"config": {
@@ -76,16 +78,23 @@
 					"target": []
 				}
 			},
-			"routes": [{
-				"name": "MenuPage",
-				"pattern": "MenuPage",
-				"target": ["MenuPage"]
-			}, {
-				"name": "LoginPage",
-				"pattern": "",
-				"view": "LoginPage",
-				"target": ["LoginPage"]
-			}],
+			"routes": [
+				{
+					"name": "MenuPage",
+					"pattern": "MenuPage",
+					"target": [
+						"MenuPage"
+					]
+				},
+				{
+					"name": "LoginPage",
+					"pattern": "",
+					"view": "LoginPage",
+					"target": [
+						"LoginPage"
+					]
+				}
+			],
 			"targets": {
 				"MenuPage": {
 					"viewType": "XML",
