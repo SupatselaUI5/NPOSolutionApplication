@@ -14,11 +14,11 @@
 			    </HBox>
 			    <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="grid2">
 			        <sap.ui.layout:content>
-			            <ObjectListItem title="Submit Claim" icon="sap-icon://form" id="item17"/>
-			            <ObjectListItem title="Apply for Funding" icon="sap-icon://capital-projects" id="item18"/>
-			            <ObjectListItem title="Funding Application Status" icon="sap-icon://process" id="item16"/>
-			            <ObjectListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" title="FAQ" icon="sap-icon://question-mark" id="item18_copy5"/>
-			            <ObjectListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" title="Contact Us" icon="sap-icon://phone" id="item18_copy4"/>
+			            <ObjectListItem title="Submit Claim" icon="sap-icon://form" id="item17" type="Active"/>
+			            <ObjectListItem xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" title="Apply for Funding" icon="sap-icon://capital-projects" id="item18" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'MainPage'\}\}\}" type="Active"/>
+			            <ObjectListItem title="Funding Application Status" icon="sap-icon://process" id="item16" type="Active"/>
+			            <ObjectListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" title="FAQ" icon="sap-icon://question-mark" id="item18_copy5" type="Active"/>
+			            <ObjectListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" title="Contact Us" icon="sap-icon://phone" id="item18_copy4" type="Active"/>
 			            <ObjectListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" title="Logout" icon="sap-icon://log" id="item18_copy2" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'LoginPage'\}\}\}" type="Active"/></sap.ui.layout:content>
 			    </sap.ui.layout:Grid>
 			</content>
