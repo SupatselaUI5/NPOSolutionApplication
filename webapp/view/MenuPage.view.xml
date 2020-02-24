@@ -1,5 +1,4 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="gdsd.NPOSolution.controller.MenuPage"
-	xmlns:html="http://www.w3.org/1999/xhtml">
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="gdsd.NPOSolution.controller.MenuPage">
 
 			<Page id="menupage" title="{i18n>appTitleMenu}">
 						<content>
@@ -15,10 +14,12 @@
 			    </HBox>
 			    <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="grid2">
 			        <sap.ui.layout:content>
-			            <ObjectListItem title="Submit Claim" icon="sap-icon://suitcase" id="item17"/>
+			            <ObjectListItem title="Submit Claim" icon="sap-icon://form" id="item17"/>
 			            <ObjectListItem title="Apply for Funding" icon="sap-icon://capital-projects" id="item18"/>
 			            <ObjectListItem title="Funding Application Status" icon="sap-icon://process" id="item16"/>
-			            <ObjectListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" title="FAQ" icon="sap-icon://question-mark" id="item18_copy2"/></sap.ui.layout:content>
+			            <ObjectListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" title="FAQ" icon="sap-icon://question-mark" id="item18_copy5"/>
+			            <ObjectListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" title="Contact Us" icon="sap-icon://phone" id="item18_copy4"/>
+			            <ObjectListItem xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:sap.ui.layout="sap.ui.layout" xmlns="sap.m" title="Logout" icon="sap-icon://log" id="item18_copy2"/></sap.ui.layout:content>
 			    </sap.ui.layout:Grid>
 			</content>
 			</Page>
