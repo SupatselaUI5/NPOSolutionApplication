@@ -1,7 +1,7 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="gdsd.NPOSolution.controller.MainPage">
 	<Shell id="shell">
 		<App id="app">
-			<pages><Page id="mainpage" title="{i18n>title}" backgroundDesign="Solid">
+			<pages><Page id="mainpage" title="{i18n>title}" backgroundDesign="Solid" showNavButton="true" navButtonPress="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'navButtonPress':\{'navigation':\{'routeName':'MenuPage'\}\}\}">
 					<content>
 					    <HBox width="100%" id="hbox0" alignContent="Center" alignItems="Center" justifyContent="Center">
 					        <items>
