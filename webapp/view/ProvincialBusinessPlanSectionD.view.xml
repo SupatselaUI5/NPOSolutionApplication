@@ -1,7 +1,7 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="gdsd.NPOSolution.controller.ProvincialBusinessPlanSectionD">
 	<App>
 		<pages>
-			<Page title="Provincial Business Plan">
+			<Page id="provincialD" title="Provincial Business Plan">
 				<content>
 						<HBox width="100%" id="hbox0" alignContent="Center" alignItems="Center" justifyContent="Center">
 					        <items>

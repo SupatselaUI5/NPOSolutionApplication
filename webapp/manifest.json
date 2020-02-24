@@ -80,6 +80,15 @@
 			},
 			"routes": [
 				{
+					"name": "ProvincialBusinessPlanA",
+					"pattern": "ProvincialBusinessPlanA",
+					"titleTarget": "",
+					"greedy": false,
+					"target": [
+						"ProvincialBusinessPlanA"
+					]
+				},
+				{
 					"name": "MainPage",
 					"pattern": "MainPage",
 					"target": [
@@ -99,6 +108,13 @@
 					"view": "LoginPage",
 					"target": [
 						"LoginPage"
+					]
+				},
+				{
+					"name": "ProvincialBusinessPlanSectionA",
+					"pattern": "ProvincialBusinessPlanSectionA",
+					"target": [
+						"ProvincialBusinessPlanA"
 					]
 				}
 			],
@@ -120,6 +136,13 @@
 					"viewType": "XML",
 					"viewName": "MainPage",
 					"viewId": "mainpage"
+				},
+				"ProvincialBusinessPlanA": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": true,
+					"viewId": "provincialA",
+					"viewName": "ProvincialBusinessPlanSectionA"
 				}
 			}
 		}

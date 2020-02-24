@@ -1,7 +1,7 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="gdsd.NPOSolution.controller.MainPage">
 	<Shell id="shell">
 		<App id="app">
-			<pages><Page id="mainpage" title="{i18n>title}" backgroundDesign="Solid" showNavButton="true" navButtonPress="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'navButtonPress':\{'navigation':\{'routeName':'MenuPage'\}\}\}">
+			<pages><Page xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" id="mainpage" title="{i18n>title}" backgroundDesign="Solid" showNavButton="true" navButtonPress="action" action:wiring="\{'navButtonPress':\{'navigation':\{'routeName':'MenuPage'\}\}\}">
 					<content>
 					    <HBox width="100%" id="hbox0" alignContent="Center" alignItems="Center" justifyContent="Center">
 					        <items>
@@ -48,7 +48,7 @@
 				    <Toolbar class="sapContrast sapContrastPlus" width="100%" id="toolbar2">
 				        <content>
 				            <ToolbarSpacer id="spacer1"/>
-				            <Button xmlns="sap.m" text="Proceed" id="button3" type="Accept"/>
+				            <Button xmlns="sap.m" text="Proceed" id="button3" type="Accept" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'ProvincialBusinessPlanSectionA'\}\}\}"/>
 				        </content>
 				    </Toolbar>
 				</footer>

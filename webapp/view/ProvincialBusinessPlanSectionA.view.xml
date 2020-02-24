@@ -1,7 +1,7 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="gdsd.NPOSolution.controller.ProvincialBusinessPlanSectionA">
 	<App>
 		<pages>
-			<Page title="Provincial Business Plan">
+			<Page id="provincialA" title="Provincial Business Plan">
 				<content>
 					
 					<HBox width="100%" id="hbox0" alignContent="Center" alignItems="Center" justifyContent="Center">
@@ -628,7 +628,7 @@
 					
 					                    </sap.ui.layout.form:Form>
 					
-					                <IconTabBar selectedKey="__filter6" id="bar1" headerBackgroundDesign="Translucent" tabDensityMode="Compact">
+					                <IconTabBar selectedKey="__filter6" id="bar1" headerBackgroundDesign="Translucent">
 					
 					                    <items>
 					
@@ -3325,9 +3325,9 @@
 			<footer>
 			    <Toolbar class="sapContrast sapContrastPlus" width="100%" id="toolbar2">
 			        <content>
-			            <Button xmlns="sap.m" text="Cancel" id="button0"/>
+			            <Button xmlns="sap.m" text="Cancel" id="button0" type="Reject"/>
 			            <ToolbarSpacer id="spacer0"/>
-			            <Button xmlns="sap.m" text="Previous" id="button1_1581762131371" type="Back"/><Button xmlns="sap.m" text="Procced" id="button1" type="Emphasized" press="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'press':\{'navigation':\{'routeName':'ProvincialBusinessPlanSectionB'\}\}\}"/>
+			            <Button xmlns="sap.m" text="Previous" id="button1_1581762131371" type="Back"/><Button xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" text="Next" id="button1" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'ProvincialBusinessPlanSectionB'\}\}\}" type="Emphasized"/>
 			        </content>
 			    </Toolbar>
 			</footer>

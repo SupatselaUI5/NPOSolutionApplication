@@ -1,7 +1,7 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="gdsd.NPOSolution.controller.ProvincialBusinessPlanSectionF">
 	<App>
 		<pages>
-			<Page title="Provincial Business Plan">
+			<Page id="provincialF" title="Provincial Business Plan">
 				<content>
 					
 						<HBox width="100%" id="hbox0" alignContent="Center" alignItems="Center" justifyContent="Center">
@@ -16,11 +16,15 @@
 				        <IconTabFilter text="F Checklist" icon="sap-icon://task" iconColor="Critical" id="filter1">
 				        
 				        </IconTabFilter>
+					
+				        <IconTabFilter xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" text="F Checklist" icon="sap-icon://task" iconColor="Critical" id="filter1_copy">
+					
+				            </IconTabFilter>
 					</items>
 		
 				<content>
 		
-				    <sap.ui.layout.form:Form editable="true" xmlns:sap.ui.layout.form="sap.ui.layout.form" id="form0">
+				    <sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="form0">
 		
 				        <sap.ui.layout.form:formContainers>
 		
